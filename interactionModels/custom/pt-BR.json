@@ -1,0 +1,61 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "cara ou coroa",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayGameIntent",
+          "slots": [
+            {
+              "name": "option",
+              "type": "GameOption"
+            }
+          ],
+          "samples": [
+            "{option}",
+            "gostaria de jogar {option}",
+            "eu escolho {option}",
+            "quero {option}",
+            "eu quero jogar {option}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "COROA",
+              "name": {
+                "value": "coroa"
+              }
+            },
+            {
+              "id": "CARA",
+              "name": {
+                "value": "cara"
+              }
+            }
+          ],
+          "name": "GameOption"
+        }
+      ]
+    }
+  },
+  "version": "2"
+}
